@@ -13,3 +13,19 @@ npx sb init --builder webpack5
 ```bash
 npm run storybook
 ```
+
+# injection des données de test dans les composants via MSW
+## installation MSW
+```bash
+npm install --save-dev msw
+```
+
+## Créer un service worker
+nécessite node > 12
+
+```bash
+npx msw init dist --save
+```
+dist = dossier de destination bundle pour le service  worker
+
+
