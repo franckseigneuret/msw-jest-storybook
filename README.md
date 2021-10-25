@@ -29,3 +29,5 @@ npx msw init dist --save
 dist = dossier de destination bundle pour le service  worker
 
 
+## Préparer les données simulées
+src/mocks/handler.js = point d'entrée des données simulées
