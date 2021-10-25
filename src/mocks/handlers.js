@@ -9,7 +9,7 @@ const POSTS = [
 
 // tableau qui va exploité les données de test
 // il décrit les URLs à traiter et les réponses attendues
-// on utilise des méthode REST (GraphQL possible)
+// on utilise des méthodes REST (GraphQL possible)
 export const handlers = [
   rest.get(POST_BASE_URL, (req, res, ctx) => res(ctx.json(POSTS))),
   rest.get(`${POST_BASE_URL}/:id`, (req, res, ctx) => res(ctx.json({ ...POSTS[0], id: Number(req.params.id) }))),

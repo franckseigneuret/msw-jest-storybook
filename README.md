@@ -31,3 +31,10 @@ dist = dossier de destination bundle pour le service  worker
 
 ## Préparer les données simulées
 src/mocks/handler.js = point d'entrée des données simulées
+
+## Mettre les mocks à dispo du service worker
+src/mocks/browser.js
+
+## Coupler le service worker à Storybook
+.storybook/preview.js
+npm run storybook
